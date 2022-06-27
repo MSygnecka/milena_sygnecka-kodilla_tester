@@ -1,6 +1,7 @@
 package com.kodilla.inheritance.homework;
 
 public class OperatingSystem {
+    int publishmentYear;
     public void turnOn() {
         System.out.println("System is turned on");
     }
