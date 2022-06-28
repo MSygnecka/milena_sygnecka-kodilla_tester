@@ -9,6 +9,7 @@ public class OperatingSystem {
         System.out.println("System is turned off");
     }
     public OperatingSystem (int publishmentYear) {
+        this.publishmentYear = publishmentYear;
 
     }
 }
