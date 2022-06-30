@@ -1,10 +1,6 @@
 package com.kodilla.inheritance.basic_assertion;
 
 public class Calculator {
-        int a;
-        int b;
-        int c;
-        int d;
 
         public int sum(int a, int b) {
             int sum = a + b;
