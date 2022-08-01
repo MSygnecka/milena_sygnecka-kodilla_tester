@@ -18,6 +18,7 @@ public class CashMachine {
     }
 
     public int[] getTransactions() {
+
         return transactions;
     }
 
@@ -42,6 +43,7 @@ public class CashMachine {
         return sumWithdrawal;
     }
     public int getTransactionsCount() {
+
         return this.transactions.length;
     }
 
@@ -64,14 +66,20 @@ public class CashMachine {
         return withdrawal;
     }
     public double getAverageCashDeposit() {
+        if (this.transactions.length == 0) {
+            return 0;
+        }
         double averageDeposit = 0;
         averageDeposit = balanceDepositCashMachine() / cashDepositCount();
 
-        return averageDeposit;
+            return averageDeposit;
     }
     public double getAverageCashWithdrawal() {
+            if (this.transactions.length == 0) {
+                return 0;
+            }
         double averageWithdrawal = 0;
-        averageWithdrawal = balanceWithdrawalCashMachine() / cashDepositCount();
+        averageWithdrawal = balanceWithdrawalCashMachine() / cashWithdrawalCount();
 
         return averageWithdrawal;
     }
