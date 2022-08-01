@@ -16,12 +16,13 @@ public class RandomNumbers {
 
             if (temp > max) {
                 max = temp;
+                System.out.println(max);
             }
             if (temp < min) {
                 min = temp;
+                System.out.println(min);
             }
         }
-
         return 0;
     }
 }
