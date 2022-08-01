@@ -12,7 +12,5 @@ public class BookApplication {
         System.out.println(harryPotter == dusk);
 
         System.out.println(harryPotter == harryPotter1);
-
-
     }
 }

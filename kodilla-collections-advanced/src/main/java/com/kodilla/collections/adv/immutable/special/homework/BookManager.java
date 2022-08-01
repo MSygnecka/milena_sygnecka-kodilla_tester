@@ -16,5 +16,4 @@ public class BookManager {
         return book;
     }
     static List<Book> books = new ArrayList<>();
-
 }
