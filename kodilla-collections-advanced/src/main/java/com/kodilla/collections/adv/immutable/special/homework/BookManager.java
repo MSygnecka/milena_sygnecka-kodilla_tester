@@ -13,7 +13,10 @@ public class BookManager {
                 return b;
             }
         }
+        books.add(book);
+
         return book;
     }
     static List<Book> books = new ArrayList<>();
+
 }
