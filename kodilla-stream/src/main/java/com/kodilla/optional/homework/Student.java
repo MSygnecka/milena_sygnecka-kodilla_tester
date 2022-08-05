@@ -8,15 +8,12 @@ public class Student {
         this.name = name;
         this.teacher = teacher;
     }
-
     public String getName() {
         return name;
     }
-
     public Teacher getTeacher() {
         return teacher;
     }
-
     @Override
     public String toString() {
         return "Student{" +

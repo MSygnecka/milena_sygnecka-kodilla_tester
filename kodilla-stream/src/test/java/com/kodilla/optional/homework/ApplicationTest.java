@@ -27,7 +27,6 @@ class ApplicationTest {
 
             Teacher name = optionalTeacher.orElse(new Teacher(("<undefined>")));
 
-
             assertEquals(result.getName(),students);
             }
         }

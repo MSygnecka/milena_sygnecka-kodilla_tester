@@ -9,22 +9,18 @@ import java.util.Optional;
 public class Application {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Monica", new Teacher("Ross")));
-        students.add(new Student("Rachel", new Teacher( null)));
-        students.add(new Student("Chandler", new Teacher("Mike")));
-        students.add(new Student("Joey", new Teacher("Phoebe")));
-        students.add(new Student("Gunther", new Teacher(null)));
-
-        Student student = new Student("Ross", new Teacher("Emily"));
+        students.add(new Student("Monica Geller", new Teacher("Ross Geller")));
+        students.add(new Student("Rachel Green", null));
+        students.add(new Student("Chandler Bing", new Teacher("Mike Hannigan")));
+        students.add(new Student("Joey Tribbiani", new Teacher("Phoebe Buffay")));
+        students.add(new Student("Gunther", null));
 
     for(Student result : students) {
-        System.out.println("Uczeń" + students);
+
+        Optional<Teacher> optionalStudent = Optional.ofNullable(result.getTeacher());
+        Teacher name = optionalStudent.orElse(new Teacher(("<undefined>")));
+
+        System.out.println("Uczeń" + " " + result.getName() + " " + "Nauczyciel" + " " + name.getName());
     }
-
-        Optional<Student> optionalStudent = Optional.ofNullable(student);
-
-        optionalStudent.ifPresent(s -> System.out.println(s.getName()));
-
-
     }
 }
