@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class WarehouseTestSuite {
+
     @Test
     public void testGrtOrder_withException() {
         // given
