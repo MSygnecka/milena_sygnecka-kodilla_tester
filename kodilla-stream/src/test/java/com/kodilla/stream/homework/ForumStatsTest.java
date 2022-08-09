@@ -1,16 +1,12 @@
 package com.kodilla.stream.homework;
 
-import com.kodilla.optional.homework.Student;
-import com.kodilla.optional.homework.Teacher;
-import com.kodilla.stream.User;
-import com.kodilla.stream.UsersRepository;
+import com.kodilla.exception.homework.stream.homework.ForumStats;
+import com.kodilla.exception.homework.stream.User;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ForumStatsTest {
