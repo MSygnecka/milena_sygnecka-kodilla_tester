@@ -1,11 +1,9 @@
-package com.kodilla.stream.homework;
+package com.kodilla.exception.homework.stream.homework;
 
-import com.kodilla.stream.User;
-import com.kodilla.stream.UsersManager;
-import com.kodilla.stream.UsersRepository;
+import com.kodilla.exception.homework.stream.UsersRepository;
+import com.kodilla.exception.homework.stream.User;
 
 import java.util.List;
-import java.util.Optional;
 
 public class ForumStats {
     public static void main(String[] args) {
@@ -19,7 +17,7 @@ public class ForumStats {
                 .filter(user -> user.getAge() >= age)
                 .mapToInt(n -> n.getNumberOfPost())
                 .average()
-                .getAsDouble();
+                .orElse(0.0);
         return result;
     }
     public static double averageNumberOfPostsUnderAge(List<User> users, int age) {
